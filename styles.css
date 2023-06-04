@@ -1,3 +1,6 @@
+:root{
+    font-family: "Rubik", sans-serif;
+}
 body{
     margin: 0;
     padding: 0;
@@ -55,4 +58,11 @@ body{
 .right-items>div{
     height: 317px;
     border: 1px solid black;
+}
+.your-projects{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    padding-left: 1.7rem;
+    margin-top: 1.7rem;
 }
