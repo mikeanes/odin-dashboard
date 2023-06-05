@@ -169,6 +169,20 @@ input[type="search"]{
     display: grid;
     grid-template-columns: 150px 1fr;
 }
+.description{
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+}
+.description>p{
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 1rem;
+}
+.description>p>span{
+    font-size: 1rem;
+    font-weight: 100;
+    color: rgb(83, 83, 83);
+}
 .right-items>div{
     height: 317px;
     border: 1px solid black;
