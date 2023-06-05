@@ -10,6 +10,21 @@ p{
     margin: 0;
     display: inline;
 }
+button{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: #6366f1;
+    font: inherit;
+    color: white;
+    height: 35px;
+    width: 70%;
+    border-radius: 20px;
+}
+button:hover{
+    background: #40419e;
+    cursor: pointer;
+}
 
 .container{
     min-height: 100vh;
@@ -72,9 +87,23 @@ p{
     align-items: center;
     justify-items: center;
 }
-img{
+.header> :nth-child(1)>img{
     height: 35px;
     border-radius: 50%;
+}
+.header> :nth-child(2){
+    display: grid;
+    grid-template-columns: 7fr 5fr; 
+}
+.greetings>img{
+    height: 50px;
+    border-radius: 50%;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
 }
 input[type="search"]{
     width: 85%;
