@@ -14,22 +14,27 @@ body{
 .right-side{
     flex: 5;
     min-height: 100%;
-    background-color: rgb(130, 130, 130)
+    background-color: #c7d2fe
 }
 
 .sidebar{
-    background-color:rgb(87, 87, 255);
+    color: white;
+    background-color:#6366f1;
     flex: 1;
     min-height: 100%;
     display: grid;
-    grid-template-rows: 100px 200px 100px;
+    grid-template-rows: 50px 200px 100px;
     align-items: start;
     padding: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+}
+.sidebar>div>div>svg{
+    height: 20px;
+    
 }
 
 .header{
-    background-color: rgb(226, 243, 180);
+    background-color: #eef2ff;
     height: 130px;
     display: grid;
     grid-template-columns: 1fr 4fr;
