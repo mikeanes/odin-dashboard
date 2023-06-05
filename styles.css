@@ -95,6 +95,20 @@ button:hover{
     display: grid;
     grid-template-columns: 7fr 5fr; 
 }
+.greetings{
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    align-items: start;
+    justify-items: center;
+}
+.greetings>p{
+    margin-top: -8px;
+    justify-self: start;
+    font-size: 1.5rem;
+}
+.greetings>p>span{
+    font-size: 0.8rem;
+}
 .greetings>img{
     height: 50px;
     border-radius: 50%;
