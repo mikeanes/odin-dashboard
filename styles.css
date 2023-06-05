@@ -154,10 +154,20 @@ input[type="search"]{
 
     gap: 1rem;
 }
+.left-items>div>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.302);
+}
 .left-items>div{
     height: 250px;
-    border: 1px solid black;
+    background-color: #eef2ff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.302);
     border-radius: 1rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 150px 1fr;
 }
 .right-items>div{
     height: 317px;
