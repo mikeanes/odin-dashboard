@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="sidebar">
+        <div class="sidebar fixed-sidebar">
             <div class="sidebar-tabs">
                 <i class="fa fa-bars"></i><p>Dashboard</p>
                 <div></div><div></div>
@@ -50,50 +50,53 @@
                     </div>
                 </div>
             </div>
-            <h2 class="your-projects">Your Projects</h2>
-            <div class="main-content">
-                <div class="left-items">
-                    <div onclick="openLinkInNewTab('https://mikeanes.github.io/odin-calculator/');">
-                        <img src="thumbnails/calculator.png" alt="thumbnail">
-                        <div class="description">
-                            <p>
-                                Calculator <br> 
-                                <span>A fully functional calculator built with HTML, CSS and 
-                                    JavaScript. Includes keyboard support!</span>
-                            </p>
-                            <div class="links">
-                                <div></div>
-                                <i class="fa fa-github" onclick="openLinkInNewTab('https://github.com/mikeanes/odin-calculator');"></i>
-                                <i class="fa fa-share-nodes"></i>
+           
+                
+                <div class="main-content">
+                    <h2 class="your-projects">Your Projects</h2>
+                    <div class="left-items">
+                        <div onclick="openLinkInNewTab('https://mikeanes.github.io/odin-calculator/');">
+                            <img src="thumbnails/calculator.png" alt="thumbnail">
+                            <div class="description">
+                                <p>
+                                    Calculator <br>
+                                    <span>A fully functional calculator built with HTML, CSS and
+                                        JavaScript.</span>
+                                </p>
+                                <div class="links">
+                                    <div></div>
+                                    <i class="fa fa-github" onclick="openLinkInNewTab('https://github.com/mikeanes/odin-calculator'); event.stopPropagation();"></i>
+                                    <i class="fa fa-share-nodes"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div onclick="openLinkInNewTab('https://mikeanes.github.io/easOdin/');">
-                        <img src="thumbnails/etch.jpeg" alt="thumbnail">
-                        <div class="description">
-                            <p>
-                                Etch-A-Sketch <br> 
-                                <span>A fun digital Etch-A-Sketch built with HTML, CSS, and JavaScript.</span>
-                            </p>
-                            <div class="links">
-                                <div></div>
-                                <i class="fa fa-github" onclick="openLinkInNewTab('https://github.com/mikeanes/easOdin');"></i>
-                                <i class="fa fa-share-nodes"></i>
+                        <div onclick="openLinkInNewTab('https://mikeanes.github.io/easOdin/');">
+                            <img src="thumbnails/etch.jpeg" alt="thumbnail">
+                            <div class="description">
+                                <p>
+                                    Etch-A-Sketch <br>
+                                    <span>A fun digital Etch-A-Sketch built with HTML, CSS, and JavaScript.</span>
+                                </p>
+                                <div class="links">
+                                    <div></div>
+                                    <i class="fa fa-github" onclick="openLinkInNewTab('https://github.com/mikeanes/easOdin'); event.stopPropagation();"></i>
+                                    <i class="fa fa-share-nodes"></i>
+                                </div>
                             </div>
                         </div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
-
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="right-items">
-                    <div></div>
-                    <div></div>
-                </div>
+                    <h2 class="whats-new">What's New</h2>
+                    <div class="right-items">
+                        <div></div>
+                        <h2>Trending</h2>
+                        <div></div>
+                    </div>
             </div>
+            
         </div>
     </div>
 </body>
