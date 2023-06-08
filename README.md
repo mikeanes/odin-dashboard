@@ -1,3 +1,3 @@
 # odin-dashboard
 
-Live at 
+Live at https://mikeanes.github.io/odin-dashboard/
