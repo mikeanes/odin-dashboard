@@ -36,7 +36,7 @@ i:hover{
 .container{
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 80px 1fr;
     grid-template-rows: 130px 1fr;
     overflow: hidden;
 }
@@ -52,15 +52,35 @@ i:hover{
     font-size: 1.2rem;
     font-weight: 900;
     grid-row: 1/3;
+    z-index: 1;
+    width: 42px;
+    transition: width 200ms ease;
 }
-
+.sidebar:hover{
+    width: 200px;
+    box-shadow: 3px 0px 6px rgba(0, 0, 0, 0.3);
+}
 .sidebar-tabs{
     display: grid;
     height: 100%;
     grid-template-rows: repeat(12, 1fr);
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr;
     align-items: center;
     column-gap: 5px;
+}
+.sidebar-tabs>p{
+    display: none;  
+}
+.sidebar:hover .sidebar-tabs>p {
+    display: block; 
+    animation: fadeIn 0.3s;
+}
+
+.sidebar:hover .sidebar-tabs{
+    grid-template-columns: 1fr 4fr;
+}
+.sidebar:hover .spacer{
+    grid-column: 1 / 3;
 }
 
 .sidebar-tabs>i{
@@ -146,7 +166,6 @@ input[type="search"]{
     grid-template-columns: 3fr 200px;
     grid-template-rows: 28.5px 1fr;
     align-items: start;
-    
     overflow-y: scroll;
 }
 .left-items{
@@ -263,3 +282,10 @@ divider{
     font-size: 0.8rem;
     color: rgb(83, 83, 83);
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  
