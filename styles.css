@@ -23,7 +23,7 @@ button{
     font: inherit;
     color: white;
     height: 35px;
-    width: 70%;
+    width: 100px;
     border-radius: 20px;
 }
 button:hover{
@@ -145,6 +145,7 @@ i:hover{
 .buttons{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     align-items: center;
     justify-items: center;
 }
@@ -293,7 +294,7 @@ divider{
     100% { opacity: 1; }
   }
   
-@media (max-width: 650px){
+@media (max-width: 700px){
     .container{
         grid-template-columns: 1fr;
         grid-template-rows: 130px 1fr 80px;
@@ -328,8 +329,49 @@ divider{
     }
 }
 
-@media screen and (max-width: 650px) {
+@media (max-width: 984px){
+    .greetings{
+        align-items: center;
+    }
+    .greetings>p{
+        font-size: 2vw;
+        margin-top: 0px;
+        
+    }
+    .greetings>p>span{
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 575px){
+    .header{
+        padding-right: 15px;
+    }
+    .header> :nth-child(2){
+        grid-template-columns: 0px 1fr;
+    }
+    .greetings>p{
+        display: none;
+    }
+    .greetings>img{
+        display: none;
+    }
+}
+
+@media (max-width:400px){
+    input[type="search"]{
+        display: none;
+    }
+    .header> :nth-child(1){
+        grid-template-columns: 60px 60px 60px 1fr;
+    }
+    .header> :nth-child(1)>p{
+        padding-left: 10px;
+    }
+}
+
+/* @media screen and (max-width: 650px) {
     .container{
         height: -webkit-fill-available;
     }
-  }
+  } */
