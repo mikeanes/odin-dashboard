@@ -373,9 +373,6 @@ divider{
     .right-items{
         grid-row: 4 / 5;
     }
-}
-
-@media (max-width:400px){
     input[type="search"]{
         display: none;
     }
@@ -387,8 +384,10 @@ divider{
     }
 }
 
-/* @media screen and (max-width: 650px) {
-    .container{
+ @media screen and (max-width: 650px) {
+    body{
+        height: -moz-available;
         height: -webkit-fill-available;
+        height: fill-available;
     }
-  } */
+  } 
