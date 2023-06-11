@@ -4,7 +4,8 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #c7d2fe
+    background-color: #c7d2fe;
+    
 }
 p{
     padding: 0;
@@ -384,10 +385,8 @@ divider{
     }
 }
 
- @media screen and (max-width: 650px) {
-    body{
-        height: -moz-available;
+ @media only screen and (max-device-width: 650px) {
+    .container{
         height: -webkit-fill-available;
-        height: fill-available;
     }
   } 
