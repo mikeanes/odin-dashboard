@@ -320,7 +320,7 @@ divider{
         grid-template-columns: repeat(10, 1fr);
         grid-auto-columns: 0px;
     }
-    .hamburger{
+    .sidebar-tabs :nth-child(1){
         display: none;
     }
     .spacer{
