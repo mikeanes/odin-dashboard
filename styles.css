@@ -310,13 +310,15 @@ divider{
         width: 100%;
     }
     .sidebar-tabs{
-        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: repeat(10, 1fr);
+        grid-auto-columns: 0px;
     }
     .sidebar:hover .sidebar-tabs>p {
         display: none; 
     }
     .sidebar:hover .sidebar-tabs{
-        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: repeat(10, 1fr);
+        grid-auto-columns: 0px;
     }
     .hamburger{
         display: none;
